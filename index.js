@@ -15,9 +15,9 @@ mongoose.connect(process.env.MONGODB_URI);
 
 // Connexion à cloudinary
 cloudinary.config({
-  cloud_name: "da34bc3x1",
-  api_key: "318346454973319",
-  api_secret: "MbW_8lB9DJA-uJnhmuDfQ-AXbnU",
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 // import de mes routes
